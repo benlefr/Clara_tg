@@ -7,7 +7,7 @@ client.on('ready', () => {
 })
 client.on('message', message =>{
     if(message.author.bot) return;
-    if(message.author.id === "314820739683319808")
+    if(message.author.id === "369907060038565899")
     {
         message.reply("TG")
     }
