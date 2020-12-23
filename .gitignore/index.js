@@ -12,5 +12,8 @@ client.on('message', message =>{
         message.channel.send("TG Clara ")
         message.reply("TG")
     }
+if (message.contains ==="version bot début"){
+message.channel.send("1")
+}
 })
 client.login(process.env.TOKEN)
