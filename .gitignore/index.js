@@ -12,7 +12,7 @@ client.on('message', message =>{
         message.channel.send("TG Clara ")
         message.reply("TG")
     }
-if (message.contains ==="version bot début"){
+if (message.content ==="version bot début"){
 message.channel.send("1")
 }
 })
