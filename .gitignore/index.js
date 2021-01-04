@@ -18,11 +18,11 @@ message.channel.send("1")
  if (message.content === "sondage"){
   
      message.channel.send("ok")
-   var embed= new Discord.MessageEmbed()
-  .setDescription("Sondage")
-  .setColor("16269544")
-  .setTimestamp()
-  message.channel.sendEmbed(embed).then(function (message) {
+  var embed= new Discord.MessageEmbed()
+     .setDescription("Sondage")
+     .setColor("16269544")
+     .setTimestamp()
+  message.channel.send(embed).then(function (message) {
     message.react("✅")
     message.react("❌")
   }
