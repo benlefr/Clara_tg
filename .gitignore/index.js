@@ -17,7 +17,7 @@ message.channel.send("1")
 }
  if (message.content === "sondage")){
   
-     
+     message.channel.send("ok")
       var embed= new Discord.MessageEmbed()
   .setDescription("Sondage")
   .addField(thingtoecho, "Répondre avec :white_check_mark: ou :x: ")
