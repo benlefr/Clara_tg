@@ -15,10 +15,10 @@ client.on('message', message =>{
 if (message.content ==="version bot début"){
 message.channel.send("1")
 }
- if (message.content === "sondage")){
+ if (message.content === "sondage"){
   
      message.channel.send("ok")
-      var embed= new Discord.MessageEmbed()
+   var embed= new Discord.MessageEmbed()
   .setDescription("Sondage")
   .setColor("16269544")
   .setTimestamp()
