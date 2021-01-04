@@ -23,7 +23,7 @@ message.channel.send("1")
      .setColor("16269544")
      .addField('Inline field title', 'Some value here', true)
      .setTimestamp()
-  message.channel.send(embed)
-      }*/
+  message.channel.send(embed)*/
+      }
 })
 client.login(process.env.TOKEN)
