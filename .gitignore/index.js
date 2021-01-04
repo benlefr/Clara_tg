@@ -20,7 +20,6 @@ message.channel.send("1")
      message.channel.send("ok")
       var embed= new Discord.MessageEmbed()
   .setDescription("Sondage")
-  .addField(thingtoecho, "Répondre avec :white_check_mark: ou :x: ")
   .setColor("16269544")
   .setTimestamp()
   message.channel.sendEmbed(embed).then(function (message) {
