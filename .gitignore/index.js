@@ -17,18 +17,13 @@ message.channel.send("1")
 }
  if (message.content === "sondage"){
   
-  message.channel.send("ok")
+  message.channel.send("ok")/*
   var embed= new Discord.MessageEmbed()
      .setDescription("Sondage")
      .setColor("16269544")
      .addField('Inline field title', 'Some value here', true)
      .setTimestamp()
-  message.channel.send(embed).then(function (message) {
-    message.react("✅")
-    message.react("❌")
-  }
-  
-  )
-      }
+  message.channel.send(embed)
+      }*/
 })
 client.login(process.env.TOKEN)
