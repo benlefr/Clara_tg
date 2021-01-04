@@ -21,7 +21,7 @@ message.channel.send("1")
       var embed= new Discord.MessageEmbed()
   .setDescription("Sondage")
   .addField(thingtoecho, "Répondre avec :white_check_mark: ou :x: ")
-  .setColor("0xB40404")
+  .setColor("16269544")
   .setTimestamp()
   message.channel.sendEmbed(embed).then(function (message) {
     message.react("✅")
