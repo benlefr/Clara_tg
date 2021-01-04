@@ -17,8 +17,8 @@ message.channel.send("1")
 }
  if (message.content === "sondage")){
   
-      
-      var embed= new Discord.RichEmbed()
+     
+      var embed= new Discord.MessageEmbed()
   .setDescription("Sondage")
   .addField(thingtoecho, "Répondre avec :white_check_mark: ou :x: ")
   .setColor("0xB40404")
