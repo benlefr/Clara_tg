@@ -15,5 +15,20 @@ client.on('message', message =>{
 if (message.content ==="version bot début"){
 message.channel.send("1")
 }
+ if (message.content === "sondage")){
+  
+      
+      var embed= new Discord.RichEmbed()
+  .setDescription("Sondage")
+  .addField(thingtoecho, "Répondre avec :white_check_mark: ou :x: ")
+  .setColor("0xB40404")
+  .setTimestamp()
+  message.channel.sendEmbed(embed).then(function (message) {
+    message.react("✅")
+    message.react("❌")
+  }
+  
+  )
+      }
 })
 client.login(process.env.TOKEN)
