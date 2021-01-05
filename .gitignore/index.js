@@ -9,16 +9,7 @@ client.on('ready', () => {
 
 
 
-client.on('messageReactionAdd', (reaction, user) => {
-  if(reaction.message.author.bot) 
-  {
-  	reaction.message.send('test')
-  }
 
-	
-    
-  
-});
 
 client.on('message', message =>{
     if(message.author.bot) return;
