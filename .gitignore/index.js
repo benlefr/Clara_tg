@@ -65,7 +65,7 @@ const exampleEmbed = {
 	},
 };
 
-channel.send({ embed: exampleEmbed });
+message.channel.send({ embed: exampleEmbed });
 
       }
 })
