@@ -11,7 +11,9 @@ client.on('ready', () => {
 
 client.on('messageReactionAdd', (reaction, user) => {
   let limit = reaction.emoji.name=='❌'; // number of thumbsdown reactions you need
-  if (reaction.emoji.name == '✅' && reaction.count >= limit) reaction.message.delete();
+  if (reaction.emoji.name == '✅' && reaction.count >= limit){
+  setTimeout(() => reaction.message.delete(),20000)
+  } 
 });
 
 client.on('message', message =>{
