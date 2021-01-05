@@ -5,6 +5,15 @@ client.on('ready', () => {
     
     console.log("client is ready");
 })
+
+
+
+
+client.on('messageReactionAdd', (reaction, user) => {
+  let limit = reaction.emoji.name=='❌'; // number of thumbsdown reactions you need
+  if (reaction.emoji.name == '✅' && reaction.count >= limit) reaction.message.delete();
+});
+
 client.on('message', message =>{
     if(message.author.bot) return;
     if(message.author.id === "369907060038565899" || message.author.tag === "Clara#6724")
@@ -50,8 +59,12 @@ const exampleEmbed = {
 	
 };
 
-message.channel.send({ embed: exampleEmbed }).then(m=>{m.react('✅'), m.react('❌')});
+message.channel.send({ embed: exampleEmbed }).then(m=>{
+	m.react('✅'),
+	m.react('❌')
 
-      }
+});
+
+}
 })
 client.login(process.env.TOKEN)
