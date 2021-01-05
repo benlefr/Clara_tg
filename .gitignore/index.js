@@ -60,7 +60,7 @@ const exampleEmbed = {
 
 message.channel.send({ embed: exampleEmbed }).then(m=>{
 	m.react('✅'),
-	m.react('❌'),
+	m.react('❌')
 	
 
 });
