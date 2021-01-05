@@ -50,9 +50,7 @@ const exampleEmbed = {
 	
 };
 
-message.channel.send({ embed: exampleEmbed }).then(()=>{
-message.react('✅')
-});
+message.channel.send({ embed: exampleEmbed }).then(()=>{message.react('✅')});
 
       }
 })
