@@ -61,7 +61,7 @@ const exampleEmbed = {
 message.channel.send({ embed: exampleEmbed }).then(m=>{
 	m.react('✅'),
 	m.react('❌'),
-	const filter = (reaction, user) => reaction.emoji.name === '👌' && user.id === 'someID',
+	const filter = (reaction, user) => reaction.emoji.name === '✅' && user.id === 'someID',
 	const collector = message.createReactionCollector(filter, { time: 15000 }),
 	collector.on('collect', r => m.channel.send(`Collected ${r.emoji.name}`)),
 	collector.on('end', collected => m.channel.send(`Collected ${collected.size} items`))
