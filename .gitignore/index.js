@@ -21,30 +21,13 @@ const exampleEmbed = {
 	title: 'Mute Clara ?',	
 	
 	fields: [
+		
+		
 		{
-			name: 'Regular field title',
-			value: 'Some value here',
-		},
-		{
-			name: '\u200b',
-			value: '\u200b',
-			inline: false,
-		},
-		{
-			name: 'Inline field title',
-			value: 'Some value here',
+			name: '🔇',
+			value: '',
 			inline: true,
-		},
-		{
-			name: 'Inline field title',
-			value: 'Some value here',
-			inline: true,
-		},
-		{
-			name: 'Inline field title',
-			value: 'Some value here',
-			inline: true,
-		},
+		}
 	],
 	
 	
