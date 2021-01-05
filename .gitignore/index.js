@@ -14,8 +14,7 @@ client.on('messageReactionAdd', (reaction, user) => {
   let nop_react = msg.reactions.filter(rx => rx.emoji.name == '❌');
   let yes_react = msg.reactions.filter(rx => rx.emoji.name == '✅');
   if (reaction.emoji.name == '✅' && reaction.count >= limit){
-  setTimeout(() => if (nop_react.first().count < yes_react.first().count) {
-  reaction.message.channel.send('Vote pour le mute')},20000)
+  setTimeout(() => reaction.message.send(nop_react)},20000)
 	
     
   } 
