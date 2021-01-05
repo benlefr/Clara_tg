@@ -10,11 +10,13 @@ client.on('ready', () => {
 
 
 client.on('messageReactionAdd', (reaction, user) => {
-  let limit = reaction.emoji.name=='❌'; // number of thumbsdown reactions you need
+  
   let nop_react = msg.reactions.filter(rx => rx.emoji.name == '❌');
   let yes_react = msg.reactions.filter(rx => rx.emoji.name == '✅');
   
-  setTimeout(() => reaction.message.send(nop_react)},20000)
+ if (reaction.emoji.name === '✅' && reaction.emoji.name === '❌' && reaction.message.author.client) {
+ 	reaction.message.send('Je suis la ')
+ }
 	
     
   
