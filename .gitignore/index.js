@@ -21,11 +21,27 @@ const exampleEmbed = {
 	title: 'Mute Clara ?',	
 	
 	fields: [
-		
+		{
+
+                        name: '🔇',
+
+                        value: 'Muuute',
+
+                        inline: false,
+
+                },{
+
+                        name: 'Oui',
+
+                        value: '✅',
+
+                        inline: true,
+
+                },
 		
 		{
-			name: '🔇',
-			value: '',
+			name: 'Non',
+			value: '❌',
 			inline: true,
 		}
 	],
