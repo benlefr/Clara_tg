@@ -10,7 +10,7 @@ client.on('ready', () => {
 
 
 client.on('messageReactionAdd', (reaction, user) => {
-  if(reaction.message.author.client) 
+  if(reaction.message.author.bot) 
   {
   	reaction.message.send('test')
   }
