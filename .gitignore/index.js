@@ -10,13 +10,11 @@ client.on('ready', () => {
 
 
 client.on('messageReactionAdd', (reaction, user) => {
-  
-  let nop_react = msg.reactions.filter(rx => rx.emoji.name == '❌');
-  let yes_react = msg.reactions.filter(rx => rx.emoji.name == '✅');
-  
- if (reaction.emoji.name === '✅' && reaction.emoji.name === '❌' && reaction.message.author.client) {
- 	reaction.message.send('Je suis la ')
- }
+  if(reaction.message.author.client) 
+  {
+  	reaction.message.send('test')
+  }
+
 	
     
   
