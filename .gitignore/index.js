@@ -7,7 +7,7 @@ client.on('ready', () => {
 })
 
 client.on('messageReactionAdd', (reaction, user) => {
-if(reaction.emoji.name === "✅" && !reaction.author.bot) {
+if(reaction.emoji.name === "✅" ) {
    reaction.message.channel.send("that work 2");
 }})
 
