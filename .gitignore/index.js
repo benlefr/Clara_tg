@@ -11,8 +11,13 @@ client.on('ready', () => {
 
 client.on('messageReactionAdd', (reaction, user) => {
   let limit = reaction.emoji.name=='❌'; // number of thumbsdown reactions you need
+  let nop_react = msg.reactions.filter(rx => rx.emoji.name == '❌');
+  let yes_react = msg.reactions.filter(rx => rx.emoji.name == '✅');
   if (reaction.emoji.name == '✅' && reaction.count >= limit){
-  setTimeout(() => reaction.message.channel.send(reaction.count),20000)
+  setTimeout(() => if (nop_react.first().count < yes_react.first().count) {
+  reaction.message.channel.send('Vote pour le mute')},20000)
+	
+    
   } 
 });
 
