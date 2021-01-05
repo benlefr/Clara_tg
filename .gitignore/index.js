@@ -17,18 +17,9 @@ message.channel.send("1")
 }
  if (message.content === "sondage"){  
 const exampleEmbed = {
-	color: 0x0099ff,
-	title: 'Some title',
-	url: 'https://discord.js.org',
-	author: {
-		name: 'Some name',
-		icon_url: 'https://i.imgur.com/wSTFkRM.png',
-		url: 'https://discord.js.org',
-	},
-	description: 'Some description here',
-	thumbnail: {
-		url: 'https://i.imgur.com/wSTFkRM.png',
-	},
+	color: 0xff007f,
+	title: 'Mute Clara ?',	
+	
 	fields: [
 		{
 			name: 'Regular field title',
@@ -55,14 +46,9 @@ const exampleEmbed = {
 			inline: true,
 		},
 	],
-	image: {
-		url: 'https://i.imgur.com/wSTFkRM.png',
-	},
-	timestamp: new Date(),
-	footer: {
-		text: 'Some footer text here',
-		icon_url: 'https://i.imgur.com/wSTFkRM.png',
-	},
+	
+	
+	
 };
 
 message.channel.send({ embed: exampleEmbed });
