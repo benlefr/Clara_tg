@@ -15,7 +15,9 @@ client.on('message', message =>{
     if(message.author.bot) return;
     if(message.author.id === "369907060038565899" || message.author.tag === "Clara#6724")
     {
-        message.channel.send("TG Clara ")
+        
+	const Response = Math.floor(Math.random() * 11);
+	    
         message.reply("TG")
     }
 if (message.content ==="version bot début"){
@@ -58,10 +60,12 @@ const exampleEmbed = {
 
 message.channel.send({ embed: exampleEmbed }).then(m=>{
 	m.react('✅'),
-	m.react('❌')
+	m.react('❌'),
+	
 
 });
 
 }
 })
 client.login(process.env.TOKEN)
+
