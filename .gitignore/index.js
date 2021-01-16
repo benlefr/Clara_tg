@@ -6,10 +6,7 @@ client.on('ready', () => {
     console.log("client is ready");
 })
 
-client.on('messageReactionAdd', (reaction, user) => {
-if(reaction.emoji.name === "✅" ) {
-   reaction.message.channel.send("that work 2");
-}})
+
 
 
 
