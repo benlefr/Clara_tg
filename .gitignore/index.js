@@ -22,7 +22,7 @@ client.on('message', message =>{
     }
 if (message.content ==="version bot début"){
 message.channel.send("1")
-}
+}/*
  if (message.content === "sondage"){  
 const exampleEmbed = {
 	color: 0xff007f,
@@ -64,7 +64,7 @@ message.channel.send({ embed: exampleEmbed }).then(m=>{
 	
 
 });
-
+*/
 }
 })
 client.login(process.env.TOKEN)
