@@ -22,49 +22,7 @@ client.on('message', message =>{
     }
 if (message.content ==="version bot début"){
 message.channel.send("1")
-}/*
- if (message.content === "sondage"){  
-const exampleEmbed = {
-	color: 0xff007f,
-	title: 'Mute Clara ?',	
-	
-	fields: [
-		{
 
-                        name: '🔇',
-
-                        value: 'Muuute',
-
-                        inline: false,
-
-                },{
-
-                        name: 'Oui',
-
-                        value: '✅',
-
-                        inline: true,
-
-                },
-		
-		{
-			name: 'Non',
-			value: '❌',
-			inline: true,
-		}
-	],
-	
-	
-	
-};
-
-message.channel.send({ embed: exampleEmbed }).then(m=>{
-	m.react('✅'),
-	m.react('❌')
-	
-
-});
-*/
 }
 })
 client.login(process.env.TOKEN)
